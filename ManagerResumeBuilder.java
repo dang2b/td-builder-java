@@ -3,7 +3,6 @@ public class ManagerResumeBuilder implements ResumeBuilder {
 
     public ManagerResumeBuilder() {
         this.resume = new Resume();
-        // Specific characteristics for a Manager
         this.resume.addSkill("Agile Management");
         this.resume.addSkill("Leadership");
         this.resume.addInterest("Team Building");
