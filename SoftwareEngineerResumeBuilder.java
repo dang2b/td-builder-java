@@ -3,7 +3,6 @@ public class SoftwareEngineerResumeBuilder implements ResumeBuilder {
 
     public SoftwareEngineerResumeBuilder() {
         this.resume = new Resume();
-        // Specific characteristics for a Software Engineer
         this.resume.addInterest("Open Source");
         this.resume.addSkill("Git");
         this.resume.addSkill("Clean Code");
