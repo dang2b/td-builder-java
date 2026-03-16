@@ -10,45 +10,45 @@ public class SoftwareEngineerResumeBuilder implements ResumeBuilder {
 
     @Override
     public ResumeBuilder setPersonalInfo(PersonalInfo info) {
-        this.resume.setPersonalInfo(info);
-        return this;
+        // TODO 1: Implémentez la délégation sur l'objet resume et chainez le builder
+        return null;
     }
 
     @Override
     public ResumeBuilder addEducation(Education education) {
-        this.resume.addEducation(education);
-        return this;
+        // TODO 1
+        return null;
     }
 
     @Override
     public ResumeBuilder addExperience(Experience experience) {
-        this.resume.addExperience(experience);
-        return this;
+        // TODO 1
+        return null;
     }
 
     @Override
     public ResumeBuilder addSkill(String skill) {
-        this.resume.addSkill(skill);
-        return this;
+        // TODO 1
+        return null;
     }
 
     @Override
     public ResumeBuilder addLanguage(String language) {
-        this.resume.addLanguage(language);
-        return this;
+        // TODO 1
+        return null;
     }
 
     @Override
     public ResumeBuilder addInterest(String interest) {
-        this.resume.addInterest(interest);
-        return this;
+        // TODO 1
+        return null;
     }
 
     @Override
     public Resume build() {
-        if (resume.getPersonalInfo() == null) {
-            throw new IllegalStateException("Les informations personnelles sont obligatoires.");
-        }
-        return resume;
+        // TODO 2: C'est l'étape finale de construction du produit.
+        // Si aucune "PersonalInfo" n'est spécifiée, levez une IllegalStateException
+        // avec le message d'erreur : "Les informations personnelles sont obligatoires."
+        return null;
     }
 }
