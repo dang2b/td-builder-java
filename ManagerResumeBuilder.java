@@ -3,33 +3,33 @@ public class ManagerResumeBuilder implements ResumeBuilder {
     // N'oubliez pas l'interface, les attributs et le constructeur initialisant "Agile Management", "Leadership" et "Team Building".
     
     @Override
-    public ResumeBuilder setPersonalInfo(PersonalInfo info) {
-        return null; // TODO
+    public void setPersonalInfo(PersonalInfo info) {
+        // TODO
     }
 
     @Override
-    public ResumeBuilder addEducation(Education education) {
-        return null; // TODO
+    public void addEducation(Education education) {
+        // TODO
     }
 
     @Override
-    public ResumeBuilder addExperience(Experience experience) {
-        return null; // TODO
+    public void addExperience(Experience experience) {
+        // TODO
     }
 
     @Override
-    public ResumeBuilder addSkill(String skill) {
-        return null; // TODO
+    public void addSkill(String skill) {
+        // TODO
     }
 
     @Override
-    public ResumeBuilder addLanguage(String language) {
-        return null; // TODO
+    public void addLanguage(String language) {
+        // TODO
     }
 
     @Override
-    public ResumeBuilder addInterest(String interest) {
-        return null; // TODO
+    public void addInterest(String interest) {
+        // TODO
     }
 
     @Override

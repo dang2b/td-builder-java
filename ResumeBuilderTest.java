@@ -10,11 +10,10 @@ public class ResumeBuilderTest {
         PersonalInfo info = new PersonalInfo("Alice Dupont", "alice@email.com", "0600000000");
         ResumeBuilder builder = new SoftwareEngineerResumeBuilder();
         
-        Resume resume = builder
-                .setPersonalInfo(info)
-                .addSkill("Java")
-                .addLanguage("Français")
-                .build();
+        builder.setPersonalInfo(info);
+        builder.addSkill("Java");
+        builder.addLanguage("Français");
+        Resume resume = builder.build();
 
         assertEquals("Alice Dupont", resume.getPersonalInfo().getName());
         assertTrue(resume.getSkills().contains("Git"));
@@ -29,10 +28,9 @@ public class ResumeBuilderTest {
         PersonalInfo info = new PersonalInfo("Bob Martin", "bob@email.com", "0611111111");
         ResumeBuilder builder = new ManagerResumeBuilder();
         
-        Resume resume = builder
-                .setPersonalInfo(info)
-                .addSkill("Scrum")
-                .build();
+        builder.setPersonalInfo(info);
+        builder.addSkill("Scrum");
+        Resume resume = builder.build();
 
         assertEquals("Bob Martin", resume.getPersonalInfo().getName());
         assertTrue(resume.getSkills().contains("Leadership"));
@@ -44,9 +42,9 @@ public class ResumeBuilderTest {
     @Test
     public void testMissingPersonalInfoRaisesError() {
         assertThrows(IllegalStateException.class, () -> {
-            new SoftwareEngineerResumeBuilder()
-                    .addSkill("Java")
-                    .build();
+            ResumeBuilder builder = new SoftwareEngineerResumeBuilder();
+            builder.addSkill("Java");
+            builder.build();
         });
     }
 
@@ -56,13 +54,13 @@ public class ResumeBuilderTest {
         Experience exp = new Experience("Google", "Développeur", "2020-2023", "Développement backend");
         Education edu = new Education("Université Lyon", "Master Informatique", "2018-2020");
         
-        Resume resume = new SoftwareEngineerResumeBuilder()
-                .setPersonalInfo(info)
-                .addExperience(exp)
-                .addEducation(edu)
-                .addSkill("Python")
-                .addLanguage("Anglais")
-                .build();
+        ResumeBuilder builder = new SoftwareEngineerResumeBuilder();
+        builder.setPersonalInfo(info);
+        builder.addExperience(exp);
+        builder.addEducation(edu);
+        builder.addSkill("Python");
+        builder.addLanguage("Anglais");
+        Resume resume = builder.build();
 
         assertEquals("Charlie", resume.getPersonalInfo().getName());
         assertEquals(1, resume.getExperiences().size());

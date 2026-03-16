@@ -9,39 +9,33 @@ public class SoftwareEngineerResumeBuilder implements ResumeBuilder {
     }
 
     @Override
-    public ResumeBuilder setPersonalInfo(PersonalInfo info) {
-        // TODO 1: Implémentez la délégation sur l'objet resume et chainez le builder
-        return null;
+    public void setPersonalInfo(PersonalInfo info) {
+        // TODO 1: Implémentez la délégation sur l'objet resume
     }
 
     @Override
-    public ResumeBuilder addEducation(Education education) {
+    public void addEducation(Education education) {
         // TODO 1
-        return null;
     }
 
     @Override
-    public ResumeBuilder addExperience(Experience experience) {
+    public void addExperience(Experience experience) {
         // TODO 1
-        return null;
     }
 
     @Override
-    public ResumeBuilder addSkill(String skill) {
+    public void addSkill(String skill) {
         // TODO 1
-        return null;
     }
 
     @Override
-    public ResumeBuilder addLanguage(String language) {
+    public void addLanguage(String language) {
         // TODO 1
-        return null;
     }
 
     @Override
-    public ResumeBuilder addInterest(String interest) {
+    public void addInterest(String interest) {
         // TODO 1
-        return null;
     }
 
     @Override

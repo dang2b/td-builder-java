@@ -1,9 +1,9 @@
 public interface ResumeBuilder {
-    ResumeBuilder setPersonalInfo(PersonalInfo info);
-    ResumeBuilder addEducation(Education education);
-    ResumeBuilder addExperience(Experience experience);
-    ResumeBuilder addSkill(String skill);
-    ResumeBuilder addLanguage(String language);
-    ResumeBuilder addInterest(String interest);
+    void setPersonalInfo(PersonalInfo info);
+    void addEducation(Education education);
+    void addExperience(Experience experience);
+    void addSkill(String skill);
+    void addLanguage(String language);
+    void addInterest(String interest);
     Resume build();
 }
